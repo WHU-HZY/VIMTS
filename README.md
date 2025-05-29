@@ -104,5 +104,8 @@ python run_models.py
 }
 ```
 
+## Connecting
+zhangyi_hu@whu.edu.cn
+
 ## Acknowledgement
 Some components of this code implementation are adopted from [VisionTS](https://github.com/Keytoyze/VisionTS) and [t-PatchGNN](https://github.com/usail-hkust/t-PatchGNN). We sincerely appreciate for their contributions.
