@@ -1,0 +1,11 @@
+# configs for visionts
+ft_type: 'full'  # 'full', 'ln', 'bias', 'none', 'mlp', 'attn'
+arch: 'mae_huge' # 'mae_base' or 'mae_large' or 'mae_huge'
+vm_pretrained: True 
+vm_ckpt: './ckpt/' # ckpt dir
+# periodicity: 30 # time resolution
+interpolation: bilinear # image resizing in MAE
+norm_const: 0.4
+align_const: 0.4
+grid_method: linear # zero  (for grid time interpolation)
+if_patch: True # whether to use patch

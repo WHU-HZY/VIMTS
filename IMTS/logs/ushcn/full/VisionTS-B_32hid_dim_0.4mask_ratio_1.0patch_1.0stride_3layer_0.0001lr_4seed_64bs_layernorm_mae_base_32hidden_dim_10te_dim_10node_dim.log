@@ -1,0 +1,88 @@
+/root/lvm4-ts/IMTS/run_models.py
+2025-01-20 17:07:24
+run_models.py --model VisionTS-B --dataset ushcn --state def --history 24 --patience 15 --batch_size 64 --lr 1e-4 --patch_size 1 --stride 1 --nhead 1 --tf_layer 1 --nlayer 3 --te_dim 10 --node_dim 10 --hid_dim 32 --mask_ratio 0.4 --train_mode fine-tune --finetune_type norm --pretrain_weights_dir /root/lvm4-ts/IMTS/logs/ushcn/Exp25798_VisionTS-B_mask_ratio0.4_stride1.0_patchsize1.0_seed1_nlayer3_best.pth --seed 4 --gpu 6 --log_dir Ablation_norm_finetune
+Namespace(state='def', n=100000000, hop=1, nhead=1, tf_layer=1, nlayer=3, epoch=1000, patience=15, history=24, patch_size=1.0, stride=1.0, logmode='a', lr=0.0001, w_decay=0.0, batch_size=64, load=None, seed=4, dataset='ushcn', log_dir='Ablation_norm_finetune', pretrain_weights_dir='/root/lvm4-ts/IMTS/logs/ushcn/Exp25798_VisionTS-B_mask_ratio0.4_stride1.0_patchsize1.0_seed1_nlayer3_best.pth', quantization=0.0, model='VisionTS-B', mask_flag=False, hid_dim=32, te_dim=10, node_dim=10, gpu='6', log_suffix='', periodicity=None, mask_ratio=0.4, train_mode='fine-tune', TTT=False, ttt_iter=None, ttt_lr=None, apply_lora=False, lora_r=8, lora_alpha=1, lora_dropout=0.0, merge_weights=False, finetune_type='norm', encoder_only=False, npatch=24, world_size=1, device=device(type='cuda'), ft_type='full', arch='mae_base', vm_pretrained=True, vm_ckpt='./ckpt/', interpolation='bilinear', norm_const=0.4, align_const=0.4, grid_method='linear', if_patch=True, n_months=48, pred_window=1, npred_patch=1, ndim=5)
+- Epoch 000, ExpID 67054
+Train - Loss (one batch): 0.27981
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.66079, 0.66079, 0.81289, 0.32175, -56.92%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 105.66s
+- Epoch 001, ExpID 67054
+Train - Loss (one batch): 0.29393
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.66624, 0.66624, 0.81624, 0.32261, -58.84%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 95.87s
+- Epoch 002, ExpID 67054
+Train - Loss (one batch): 0.39072
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.67726, 0.67726, 0.82296, 0.31342, -51.24%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 95.81s
+- Epoch 003, ExpID 67054
+Train - Loss (one batch): 0.23403
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.66438, 0.66438, 0.81509, 0.31251, -51.27%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 96.47s
+- Epoch 004, ExpID 67054
+Train - Loss (one batch): 0.24765
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.66169, 0.66169, 0.81345, 0.31432, -50.83%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 97.43s
+- Epoch 005, ExpID 67054
+Train - Loss (one batch): 0.15537
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.67420, 0.67420, 0.82110, 0.31328, -51.36%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 96.87s
+- Epoch 006, ExpID 67054
+Train - Loss (one batch): 0.39626
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.66899, 0.66899, 0.81792, 0.31567, -55.07%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 98.25s
+- Epoch 007, ExpID 67054
+Train - Loss (one batch): 0.13558
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.67469, 0.67469, 0.82140, 0.30994, -50.56%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 99.35s
+- Epoch 008, ExpID 67054
+Train - Loss (one batch): 0.16634
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.67528, 0.67528, 0.82176, 0.31486, -55.29%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 98.56s
+- Epoch 009, ExpID 67054
+Train - Loss (one batch): 0.43428
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.68129, 0.68129, 0.82540, 0.31284, -53.34%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 98.13s
+- Epoch 010, ExpID 67054
+Train - Loss (one batch): 0.24308
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.68475, 0.68475, 0.82750, 0.32026, -57.93%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 98.38s
+- Epoch 011, ExpID 67054
+Train - Loss (one batch): 0.26617
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.69788, 0.69788, 0.83539, 0.32085, -55.99%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 98.38s
+- Epoch 012, ExpID 67054
+Train - Loss (one batch): 0.64060
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.67838, 0.67838, 0.82364, 0.31792, -56.57%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 99.15s
+- Epoch 013, ExpID 67054
+Train - Loss (one batch): 0.56843
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.68850, 0.68850, 0.82976, 0.30715, -48.35%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 99.08s
+- Epoch 014, ExpID 67054
+Train - Loss (one batch): 1.42814
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.68019, 0.68019, 0.82474, 0.32728, -61.98%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 97.99s
+- Epoch 015, ExpID 67054
+Train - Loss (one batch): 0.17684
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.69306, 0.69306, 0.83250, 0.31499, -55.02%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.48827, 0.48827, 0.69877, 0.29737, -52.38%
+Time spent: 97.99s
+/root/lvm4-ts/IMTS/run_models.py
+2025-01-20 18:09:40
+run_models.py --model VisionTS-B --dataset ushcn --state def --history 24 --patience 15 --batch_size 64 --lr 1e-4 --patch_size 1 --stride 1 --nhead 1 --tf_layer 1 --nlayer 3 --te_dim 10 --node_dim 10 --hid_dim 32 --mask_ratio 0.4 --train_mode fine-tune --finetune_type bias --pretrain_weights_dir /root/lvm4-ts/IMTS/logs/ushcn/Exp25798_VisionTS-B_mask_ratio0.4_stride1.0_patchsize1.0_seed1_nlayer3_best.pth --seed 4 --gpu 5 --log_dir Ablation_norm_finetune
+Namespace(state='def', n=100000000, hop=1, nhead=1, tf_layer=1, nlayer=3, epoch=1000, patience=15, history=24, patch_size=1.0, stride=1.0, logmode='a', lr=0.0001, w_decay=0.0, batch_size=64, load=None, seed=4, dataset='ushcn', log_dir='Ablation_norm_finetune', pretrain_weights_dir='/root/lvm4-ts/IMTS/logs/ushcn/Exp25798_VisionTS-B_mask_ratio0.4_stride1.0_patchsize1.0_seed1_nlayer3_best.pth', quantization=0.0, model='VisionTS-B', mask_flag=False, hid_dim=32, te_dim=10, node_dim=10, gpu='5', log_suffix='', periodicity=None, mask_ratio=0.4, train_mode='fine-tune', TTT=False, ttt_iter=None, ttt_lr=None, apply_lora=False, lora_r=8, lora_alpha=1, lora_dropout=0.0, merge_weights=False, finetune_type='bias', encoder_only=False, npatch=24, world_size=1, device=device(type='cuda'), ft_type='full', arch='mae_base', vm_pretrained=True, vm_ckpt='./ckpt/', interpolation='bilinear', norm_const=0.4, align_const=0.4, grid_method='linear', if_patch=True, n_months=48, pred_window=1, npred_patch=1, ndim=5)

@@ -1,0 +1,2 @@
+# configs for tPatchGNN
+if_patch: True # whether to use patch

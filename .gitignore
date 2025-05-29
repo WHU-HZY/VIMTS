@@ -1,0 +1,21 @@
+__pycache__
+save/
+ckpt/
+build/
+dist/
+*.egg-info
+dist.sh
+.vscode/
+draft/
+caogao.ipynb
+physionet.org/
+# *.log
+other_work/
+*.pth
+caogao/
+# IMTS/data/activity/
+# IMTS/data/physionet/
+# IMTS/data/ushcn/
+IMTS/data/mimic/processed
+IMTS/data/mimic/raw
+*.DS_Store
