@@ -1,6 +1,6 @@
 # IMTS is Worth Time × Channel Patches: Visual Masked Autoencoders for Irregular Multivariate Time Series Prediction
 
-The official implementation of **ICML 25** paper *IMTS is Worth Time × Channel Patches: Visual Masked Autoencoders for Irregular Multivariate Time Series Prediction*. [[pdf](https://github.com/WHU-HZY/VIMTS/blob/main/paper/VIMTS_ICML2025.pdf)] [[poster](https://icml.cc/virtual/2025/poster/46570)] [[ArXiv](https://arxiv.org/abs/2505.22815)]
+The official implementation of **ICML 25** paper *IMTS is Worth Time × Channel Patches: Visual Masked Autoencoders for Irregular Multivariate Time Series Prediction*. [[pdf](https://github.com/WHU-HZY/VIMTS/blob/main/paper/VIMTS_ICML2025.pdf)] [[poster](https://icml.cc/virtual/2025/poster/46570)] [[arXiv](https://arxiv.org/abs/2505.22815)]
 
 
 ![GitHub](https://img.shields.io/badge/license-MIT-green)
